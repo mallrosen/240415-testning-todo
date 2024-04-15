@@ -13,7 +13,17 @@ describe("testing addTodo", ()=>{
         //Assert
         expect(theList.length).toBe(beginningLength + 1);
     })
+    test("it should be more than 2 letters", ()=>{
+        //Assign
+        const todoText = "Gå";
+        const theList : Todo[] = [];
+        //Act
+        addTodo(todoText, theList);
+        //Assert
+        expect(theList.length).toBe(0);
+    })
 })
+
 
 describe("testing changeTodo", ()=>{
     test("it should change todo", ()=>{

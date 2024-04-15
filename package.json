@@ -20,6 +20,9 @@
     "sass": "^1.75.0"
   },
   "jest": {
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "coverageReporters": 
+    ["html"],
+    "collectCoverage": true
   }
 }
